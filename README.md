@@ -1,3 +1,3 @@
 # HADO
 
-This ontology describes informationnal entities related to health administrative data.
+An ontology of informationnal entities about health administrative data.
