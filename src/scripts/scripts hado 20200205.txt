@@ -1,0 +1,30 @@
+
+HADO scripts
+
+	- IAO import
+	
+robot extract --method BOT --input "TARGET_FOLDER\IAO\src\ontology\iao-edit.owl" --term-file iao_import_for_hado.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\iao_for_hado.owl
+
+	- DEMO import
+	
+robot extract --method BOT --input "C:\Depot_public_GitHub\DEMO\src\demo.owl" --term-file demo_import_for_hado.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\demo_for_hado.owl
+
+	- OMIABIS import
+
+robot extract --method BOT --input "TARGET_FOLDER\omiabis-dev\BFO2 omiabis\omiabis.owl" --term-file omiabis_import_for_hado.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\omiabis_for_hado.owl
+
+	- OBI import
+	
+robot extract --method BOT --input "TARGET_FOLDER\obi\src\ontology\obi-edit.owl" --term-file obi_import_for_hado.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\obi_for_hado.owl
+
+	- OGMS import
+	
+robot extract --method BOT --input "TARGET_FOLDER\ogms\src\ontology\ogms.owl" --term-file ogms_import_for_hado.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\ogms_for_hado.owl
+
+	- OMRSE import
+
+robot extract --method BOT --input "TARGET_FOLDER\OMRSE\omrse\omrse.owl" --term-file omrse_import_for_hado.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\omrse_for_hado.owl
+
+	-  HADO merge
+
+robot merge --input ..\hado.owl --output ..\..\merged\hado-merged.owl

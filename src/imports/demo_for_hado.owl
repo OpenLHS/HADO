@@ -1,0 +1,108 @@
+Prefix(:=<http://purl.obolibrary.org/obo/demo.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/demo.owl>
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Adrien Barton")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jean-François Éthier")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Olivier Grenier")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Paul Fabry")
+Annotation(rdfs:comment "An ontology for identification of individuals in the healthcare domain."@en)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DEMO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DEMO_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DEMO_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (<http://purl.org/dc/elements/1.1/creator>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: rdfs:comment (rdfs:comment)
+
+AnnotationAssertion(rdfs:isDefinedBy rdfs:comment <http://www.w3.org/2000/01/rdf-schema.owl>)
+
+# Annotation Property: rdfs:label (rdfs:label)
+
+AnnotationAssertion(rdfs:isDefinedBy rdfs:label <http://www.w3.org/2000/01/rdf-schema.owl>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000219> (<http://purl.obolibrary.org/obo/IAO_0000219>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/iao.owl>)
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: rdf:PlainLiteral (rdf:PlainLiteral)
+
+AnnotationAssertion(rdfs:isDefinedBy rdf:PlainLiteral <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000035> (<http://purl.obolibrary.org/obo/BFO_0000035>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000035> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000038> (<http://purl.obolibrary.org/obo/BFO_0000038>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000038> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/DEMO_0000025> (beginning process boundary)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/DEMO_0000025> <http://purl.obolibrary.org/obo/demo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEMO_0000025> "beginning process boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DEMO_0000025> <http://purl.obolibrary.org/obo/BFO_0000035>)
+
+# Class: <http://purl.obolibrary.org/obo/DEMO_0000026> (ending process boundary)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/DEMO_0000026> <http://purl.obolibrary.org/obo/demo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEMO_0000026> "ending process boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DEMO_0000026> <http://purl.obolibrary.org/obo/BFO_0000035>)
+
+# Class: <http://purl.obolibrary.org/obo/DEMO_0000044> (temporal specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/DEMO_0000044> "'Date of birth: 1802/02/26'
+
+'Date of death: 1885/05/22'"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DEMO_0000044> "An information content entity which is about a specific period of time."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/DEMO_0000044> <http://purl.obolibrary.org/obo/demo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEMO_0000044> "temporal specification"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/DEMO_0000044> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/BFO_0000038>)))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (<http://purl.obolibrary.org/obo/IAO_0000030>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/iao.owl>)
+
+
+)
