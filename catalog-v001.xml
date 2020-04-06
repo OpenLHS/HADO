@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/core-subset.owl" uri="src/imports/core-subset.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opmi.owl" uri="src/imports/opmi_for_hado.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse.owl" uri="src/imports/omrse_for_hado.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi/dev/obi-edit.owl" uri="src/imports/obi_for_hado.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/iao-edit.owl" uri="src/imports/iao_for_hado.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl" uri="src/imports/bfo_classes_only.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi/obi_core.owl" uri="src/imports/ncbitaxon_homo_sapiens.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omiabis/dev/omiabis.owl" uri="src/imports/omiabis_for_hado.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogms.owl" uri="src/imports/ogms_for_hado.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/demo.owl" uri="src/imports/demo_for_hado.owl"/>
+</catalog>
